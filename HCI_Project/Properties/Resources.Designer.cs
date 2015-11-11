@@ -63,6 +63,16 @@ namespace HCI_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_loop2 {
+            get {
+                object obj = ResourceManager.GetObject("arrow_loop2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Custom_Icon_Design_Pretty_Office_7_Save {
             get {
                 object obj = ResourceManager.GetObject("Custom-Icon-Design-Pretty-Office-7-Save", resourceCulture);
@@ -83,9 +93,39 @@ namespace HCI_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fatcow_Farm_Fresh_Metronome {
+            get {
+                object obj = ResourceManager.GetObject("Fatcow-Farm-Fresh-Metronome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icons_Land_Play_Stop_Pause_Record_Normal {
             get {
                 object obj = ResourceManager.GetObject("Icons-Land-Play-Stop-Pause-Record-Normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Iconsmind_Outline_Loop {
+            get {
+                object obj = ResourceManager.GetObject("Iconsmind-Outline-Loop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Iconsmind_Outline_Pulse {
+            get {
+                object obj = ResourceManager.GetObject("Iconsmind-Outline-Pulse", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +156,16 @@ namespace HCI_Project.Properties {
         internal static System.Drawing.Bitmap Oxygen_Icons_org_Oxygen_Actions_help_about {
             get {
                 object obj = ResourceManager.GetObject("Oxygen-Icons.org-Oxygen-Actions-help-about", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Record_Normal_icon {
+            get {
+                object obj = ResourceManager.GetObject("Record-Normal-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

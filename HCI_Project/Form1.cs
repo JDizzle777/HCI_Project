@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,27 @@ namespace HCI_Project
         {
             turnOnMet.Checked = false;
             turnOffMet.Checked = true;
+        }
+
+        private void Drum_Pad_Form_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void recordButton_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+    public class RoundButton : Button
+    {
+        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
+        {
+            GraphicsPath grPath = new GraphicsPath();
+            grPath.AddEllipse(3, 5, ClientSize.Width-7, ClientSize.Height-9);
+            this.Region = new System.Drawing.Region(grPath);
+            base.OnPaint(e);
         }
     }
 }

@@ -110,6 +110,21 @@
   <ItemGroup>
     <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-help-about.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Loop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Pulse.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fatcow-Farm-Fresh-Metronome.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record-Normal-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_loop2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
