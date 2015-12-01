@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace HCI_Project
 {
@@ -49,6 +50,30 @@ namespace HCI_Project
         private void recordButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\ChineseSnare.wav";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\Stock808.wav";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\COMPANYKick.wav";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var player = new WMPLib.WindowsMediaPlayer();
+            player.URL = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\COMPANYHat.wav";
         }
     }
 
