@@ -14,26 +14,19 @@ namespace HCI_Project
 {
     public partial class Drum_Pad_Form : Form
     {
-        System.Media.SoundPlayer Player1 = new System.Media.SoundPlayer();
-        System.Media.SoundPlayer Player2 = new System.Media.SoundPlayer();
-        System.Media.SoundPlayer Player3 = new System.Media.SoundPlayer();
-        System.Media.SoundPlayer Player4 = new System.Media.SoundPlayer();
+        // paths to audio files
+        string button1Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\COMPANYShaker.wav";
+        string button2Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\Stock808.wav";
+        string button3Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\StockKick.wav";
+        string button4Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\ChineseSnare.wav";
 
+        // default beats per minute
+        double BPM = 80.0;
 
         public Drum_Pad_Form()
         {
             InitializeComponent();
             turnOffMet.Checked = true;
-            /*
-            Player1.SoundLocation = "C:\\Users\\conor\\Documents\\HCI_Sounds\\ChineseSnare.wav";
-            Player1.Load();
-            Player2.SoundLocation = "C:\\Users\\conor\\Documents\\HCI_Sounds\\Stock808.wav";
-            Player2.Load();
-            Player3.SoundLocation = "C:\\Users\\conor\\Documents\\HCI_Sounds\\COMPANYKick.wav";
-            Player3.Load();
-            Player4.SoundLocation = "C:\\Users\\conor\\Documents\\HCI_Sounds\\COMPANYHat.wav";
-            Player4.Load();
-            */
         }
 
         private void mnuClose_Click(object sender, EventArgs e)
@@ -72,28 +65,28 @@ namespace HCI_Project
         {
             //Player1.Play();
             var player = new WMPLib.WindowsMediaPlayer();
-            player.URL = @"C:\Users\conor\Documents\HCI_Sounds\COMPANYShaker.wav";
+            player.URL = button1Path;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             //Player2.Play();
             var player = new WMPLib.WindowsMediaPlayer();
-            player.URL = @"C:\Users\conor\Documents\HCI_Sounds\Stock808.wav";
+            player.URL = button2Path;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             //Player3.Play();
             var player = new WMPLib.WindowsMediaPlayer();
-            player.URL = @"C:\Users\conor\Documents\HCI_Sounds\COMPANYOpenhat.wav";
+            player.URL = button3Path;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             //Player4.Play();
             var player = new WMPLib.WindowsMediaPlayer();
-            player.URL = @"C:\Users\conor\Documents\HCI_Sounds\CP.wav";
+            player.URL = button4Path;
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
@@ -117,6 +110,16 @@ namespace HCI_Project
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
+        private void mnuBPM_Click(object sender, EventArgs e)
+        {
+            BPMForm popup = new BPMForm(BPM);
+            DialogResult dialogResult = popup.ShowDialog();
+            if(dialogResult == DialogResult.OK)
+            {
+                this.BPM = popup.BPM;
+            }
+            popup.Dispose();
+        }
     }
 
 

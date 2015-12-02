@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BPMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BPMForm.Designer.cs">
+      <DependentUpon>BPMForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BPMForm.resx">
+      <DependentUpon>BPMForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.en-US.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +144,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tatice-Cristal-Intense-Ok.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

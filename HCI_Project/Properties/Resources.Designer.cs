@@ -173,6 +173,16 @@ namespace HCI_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Tatice_Cristal_Intense_Ok {
+            get {
+                object obj = ResourceManager.GetObject("Tatice-Cristal-Intense-Ok", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Visualpharm_Must_Have_Redo {
             get {
                 object obj = ResourceManager.GetObject("Visualpharm-Must-Have-Redo", resourceCulture);

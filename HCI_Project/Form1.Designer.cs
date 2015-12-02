@@ -31,22 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Drum_Pad_Form));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuNew = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuOpen = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuSave = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuClose = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuUndo = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuRedo = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuRecord = new System.Windows.Forms.ToolStripMenuItem();
-            this.loopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuBPM = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuMetronome = new System.Windows.Forms.ToolStripMenuItem();
-            this.turnOnMet = new System.Windows.Forms.ToolStripMenuItem();
-            this.turnOffMet = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tutorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -55,6 +42,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.mnuNew = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuClose = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuUndo = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuRedo = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuRecord = new System.Windows.Forms.ToolStripMenuItem();
+            this.loopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBPM = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMetronome = new System.Windows.Forms.ToolStripMenuItem();
+            this.turnOnMet = new System.Windows.Forms.ToolStripMenuItem();
+            this.turnOffMet = new System.Windows.Forms.ToolStripMenuItem();
+            this.tutorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recordButton = new HCI_Project.RoundButton();
             this.loopButton = new HCI_Project.RoundButton();
             this.menuStrip1.SuspendLayout();
@@ -82,37 +82,8 @@
             this.mnuOpen,
             this.mnuSave,
             this.mnuClose});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
-            // 
-            // mnuNew
-            // 
-            this.mnuNew.BackColor = System.Drawing.Color.PowderBlue;
-            resources.ApplyResources(this.mnuNew, "mnuNew");
-            this.mnuNew.Image = global::HCI_Project.Properties.Resources.music_plus_icon_icon;
-            this.mnuNew.Name = "mnuNew";
-            // 
-            // mnuOpen
-            // 
-            this.mnuOpen.BackColor = System.Drawing.Color.PowderBlue;
-            this.mnuOpen.Image = global::HCI_Project.Properties.Resources.Custom_Icon_Design_Pretty_Office_9_Open_file;
-            this.mnuOpen.Name = "mnuOpen";
-            resources.ApplyResources(this.mnuOpen, "mnuOpen");
-            // 
-            // mnuSave
-            // 
-            this.mnuSave.BackColor = System.Drawing.Color.PowderBlue;
-            this.mnuSave.Image = global::HCI_Project.Properties.Resources.Custom_Icon_Design_Pretty_Office_7_Save;
-            this.mnuSave.Name = "mnuSave";
-            resources.ApplyResources(this.mnuSave, "mnuSave");
-            // 
-            // mnuClose
-            // 
-            this.mnuClose.BackColor = System.Drawing.Color.PowderBlue;
-            this.mnuClose.Image = global::HCI_Project.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_application_exit;
-            this.mnuClose.Name = "mnuClose";
-            resources.ApplyResources(this.mnuClose, "mnuClose");
-            this.mnuClose.Click += new System.EventHandler(this.mnuClose_Click);
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             // 
             // editToolStripMenuItem
             // 
@@ -121,77 +92,16 @@
             this.mnuRedo,
             this.mnuRecord,
             this.loopToolStripMenuItem});
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             resources.ApplyResources(this.editToolStripMenuItem, "editToolStripMenuItem");
-            // 
-            // mnuUndo
-            // 
-            this.mnuUndo.BackColor = System.Drawing.Color.PowderBlue;
-            this.mnuUndo.Image = global::HCI_Project.Properties.Resources.Visualpharm_Must_Have_Undo;
-            this.mnuUndo.Name = "mnuUndo";
-            resources.ApplyResources(this.mnuUndo, "mnuUndo");
-            // 
-            // mnuRedo
-            // 
-            this.mnuRedo.BackColor = System.Drawing.Color.PowderBlue;
-            this.mnuRedo.Image = global::HCI_Project.Properties.Resources.Visualpharm_Must_Have_Redo;
-            this.mnuRedo.Name = "mnuRedo";
-            resources.ApplyResources(this.mnuRedo, "mnuRedo");
-            // 
-            // mnuRecord
-            // 
-            this.mnuRecord.BackColor = System.Drawing.Color.PowderBlue;
-            this.mnuRecord.Image = global::HCI_Project.Properties.Resources.Icons_Land_Play_Stop_Pause_Record_Normal;
-            this.mnuRecord.Name = "mnuRecord";
-            resources.ApplyResources(this.mnuRecord, "mnuRecord");
-            // 
-            // loopToolStripMenuItem
-            // 
-            this.loopToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
-            this.loopToolStripMenuItem.Image = global::HCI_Project.Properties.Resources.Iconsmind_Outline_Loop;
-            this.loopToolStripMenuItem.Name = "loopToolStripMenuItem";
-            resources.ApplyResources(this.loopToolStripMenuItem, "loopToolStripMenuItem");
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             // 
             // toolsToolStripMenuItem
             // 
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuBPM,
             this.mnuMetronome});
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             resources.ApplyResources(this.toolsToolStripMenuItem, "toolsToolStripMenuItem");
-            // 
-            // mnuBPM
-            // 
-            this.mnuBPM.BackColor = System.Drawing.Color.PowderBlue;
-            this.mnuBPM.Image = global::HCI_Project.Properties.Resources.Iconsmind_Outline_Pulse;
-            this.mnuBPM.Name = "mnuBPM";
-            resources.ApplyResources(this.mnuBPM, "mnuBPM");
-            // 
-            // mnuMetronome
-            // 
-            this.mnuMetronome.BackColor = System.Drawing.Color.PowderBlue;
-            this.mnuMetronome.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.turnOnMet,
-            this.turnOffMet});
-            this.mnuMetronome.Image = global::HCI_Project.Properties.Resources.Fatcow_Farm_Fresh_Metronome;
-            this.mnuMetronome.Name = "mnuMetronome";
-            resources.ApplyResources(this.mnuMetronome, "mnuMetronome");
-            // 
-            // turnOnMet
-            // 
-            this.turnOnMet.BackColor = System.Drawing.Color.PowderBlue;
-            this.turnOnMet.CheckOnClick = true;
-            this.turnOnMet.Name = "turnOnMet";
-            resources.ApplyResources(this.turnOnMet, "turnOnMet");
-            this.turnOnMet.Click += new System.EventHandler(this.turnOnMet_Click);
-            // 
-            // turnOffMet
-            // 
-            this.turnOffMet.BackColor = System.Drawing.Color.PowderBlue;
-            this.turnOffMet.CheckOnClick = true;
-            this.turnOffMet.Name = "turnOffMet";
-            resources.ApplyResources(this.turnOffMet, "turnOffMet");
-            this.turnOffMet.Click += new System.EventHandler(this.turnOffMet_Click);
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             // 
             // helpToolStripMenuItem
             // 
@@ -201,16 +111,12 @@
             resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             // 
-            // tutorialToolStripMenuItem
-            // 
-            this.tutorialToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
-            this.tutorialToolStripMenuItem.Image = global::HCI_Project.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_help_about;
-            this.tutorialToolStripMenuItem.Name = "tutorialToolStripMenuItem";
-            resources.ApplyResources(this.tutorialToolStripMenuItem, "tutorialToolStripMenuItem");
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             resources.ApplyResources(this.button1, "button1");
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Name = "button1";
@@ -220,6 +126,9 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Silver;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = false;
@@ -228,6 +137,9 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Silver;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             resources.ApplyResources(this.button4, "button4");
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = false;
@@ -248,6 +160,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = false;
@@ -261,6 +176,7 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.recordButton);
             this.panel2.Controls.Add(this.loopButton);
@@ -273,6 +189,104 @@
             resources.ApplyResources(this.label2, "label2");
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Name = "label2";
+            // 
+            // mnuNew
+            // 
+            this.mnuNew.BackColor = System.Drawing.Color.PowderBlue;
+            resources.ApplyResources(this.mnuNew, "mnuNew");
+            this.mnuNew.Image = global::HCI_Project.Properties.Resources.music_plus_icon_icon;
+            this.mnuNew.Name = "mnuNew";
+            // 
+            // mnuOpen
+            // 
+            this.mnuOpen.BackColor = System.Drawing.Color.PowderBlue;
+            resources.ApplyResources(this.mnuOpen, "mnuOpen");
+            this.mnuOpen.Image = global::HCI_Project.Properties.Resources.Custom_Icon_Design_Pretty_Office_9_Open_file;
+            this.mnuOpen.Name = "mnuOpen";
+            // 
+            // mnuSave
+            // 
+            this.mnuSave.BackColor = System.Drawing.Color.PowderBlue;
+            resources.ApplyResources(this.mnuSave, "mnuSave");
+            this.mnuSave.Image = global::HCI_Project.Properties.Resources.Custom_Icon_Design_Pretty_Office_7_Save;
+            this.mnuSave.Name = "mnuSave";
+            // 
+            // mnuClose
+            // 
+            this.mnuClose.BackColor = System.Drawing.Color.PowderBlue;
+            resources.ApplyResources(this.mnuClose, "mnuClose");
+            this.mnuClose.Image = global::HCI_Project.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_application_exit;
+            this.mnuClose.Name = "mnuClose";
+            this.mnuClose.Click += new System.EventHandler(this.mnuClose_Click);
+            // 
+            // mnuUndo
+            // 
+            this.mnuUndo.BackColor = System.Drawing.Color.PowderBlue;
+            resources.ApplyResources(this.mnuUndo, "mnuUndo");
+            this.mnuUndo.Image = global::HCI_Project.Properties.Resources.Visualpharm_Must_Have_Undo;
+            this.mnuUndo.Name = "mnuUndo";
+            // 
+            // mnuRedo
+            // 
+            this.mnuRedo.BackColor = System.Drawing.Color.PowderBlue;
+            resources.ApplyResources(this.mnuRedo, "mnuRedo");
+            this.mnuRedo.Image = global::HCI_Project.Properties.Resources.Visualpharm_Must_Have_Redo;
+            this.mnuRedo.Name = "mnuRedo";
+            // 
+            // mnuRecord
+            // 
+            this.mnuRecord.BackColor = System.Drawing.Color.PowderBlue;
+            resources.ApplyResources(this.mnuRecord, "mnuRecord");
+            this.mnuRecord.Image = global::HCI_Project.Properties.Resources.Icons_Land_Play_Stop_Pause_Record_Normal;
+            this.mnuRecord.Name = "mnuRecord";
+            // 
+            // loopToolStripMenuItem
+            // 
+            this.loopToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
+            resources.ApplyResources(this.loopToolStripMenuItem, "loopToolStripMenuItem");
+            this.loopToolStripMenuItem.Image = global::HCI_Project.Properties.Resources.Iconsmind_Outline_Loop;
+            this.loopToolStripMenuItem.Name = "loopToolStripMenuItem";
+            // 
+            // mnuBPM
+            // 
+            this.mnuBPM.BackColor = System.Drawing.Color.PowderBlue;
+            resources.ApplyResources(this.mnuBPM, "mnuBPM");
+            this.mnuBPM.Image = global::HCI_Project.Properties.Resources.Iconsmind_Outline_Pulse;
+            this.mnuBPM.Name = "mnuBPM";
+            this.mnuBPM.Click += new System.EventHandler(this.mnuBPM_Click);
+            // 
+            // mnuMetronome
+            // 
+            this.mnuMetronome.BackColor = System.Drawing.Color.PowderBlue;
+            this.mnuMetronome.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.turnOnMet,
+            this.turnOffMet});
+            resources.ApplyResources(this.mnuMetronome, "mnuMetronome");
+            this.mnuMetronome.Image = global::HCI_Project.Properties.Resources.Fatcow_Farm_Fresh_Metronome;
+            this.mnuMetronome.Name = "mnuMetronome";
+            // 
+            // turnOnMet
+            // 
+            this.turnOnMet.BackColor = System.Drawing.Color.PowderBlue;
+            this.turnOnMet.CheckOnClick = true;
+            this.turnOnMet.Name = "turnOnMet";
+            resources.ApplyResources(this.turnOnMet, "turnOnMet");
+            this.turnOnMet.Click += new System.EventHandler(this.turnOnMet_Click);
+            // 
+            // turnOffMet
+            // 
+            this.turnOffMet.BackColor = System.Drawing.Color.PowderBlue;
+            this.turnOffMet.CheckOnClick = true;
+            this.turnOffMet.Name = "turnOffMet";
+            resources.ApplyResources(this.turnOffMet, "turnOffMet");
+            this.turnOffMet.Click += new System.EventHandler(this.turnOffMet_Click);
+            // 
+            // tutorialToolStripMenuItem
+            // 
+            this.tutorialToolStripMenuItem.BackColor = System.Drawing.Color.PowderBlue;
+            resources.ApplyResources(this.tutorialToolStripMenuItem, "tutorialToolStripMenuItem");
+            this.tutorialToolStripMenuItem.Image = global::HCI_Project.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_help_about;
+            this.tutorialToolStripMenuItem.Name = "tutorialToolStripMenuItem";
             // 
             // recordButton
             // 
