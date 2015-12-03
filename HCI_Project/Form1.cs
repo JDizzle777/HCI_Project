@@ -9,16 +9,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.IO.Ports;
+using System.Diagnostics;
+using System.Threading;
 
 namespace HCI_Project
 {
     public partial class Drum_Pad_Form : Form
     {
         // paths to audio files
-        string button1Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\COMPANYShaker.wav";
-        string button2Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\Stock808.wav";
-        string button3Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\StockKick.wav";
-        string button4Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\ChineseSnare.wav";
+        string button1Path = @"C:\Users\conor\Documents\HCI_Sounds\COMPANYShaker.wav";
+        string button2Path = @"C:\Users\conor\Documents\HCI_Sounds\Stock808.wav";
+        string button3Path = @"C:\Users\conor\Documents\HCI_Sounds\StockKick.wav";
+        string button4Path = @"C:\Users\conor\Documents\HCI_Sounds\ChineseSnare.wav";
 
         // default beats per minute
         double BPM = 80.0;
@@ -120,8 +123,49 @@ namespace HCI_Project
             }
             popup.Dispose();
         }
-    }
 
+        private void serialConnect_Click(object sender, EventArgs e)
+        {
+            serialPort1.Open();
+            serialPort1.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+        }
+
+        private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
+        {
+            SerialPort sp = (SerialPort)sender;
+            string indata = sp.ReadLine();
+            int temp = 0;
+            if (indata != "" && indata != null)
+                temp = Convert.ToInt32(indata);
+
+            if (temp > 0)
+            {
+                setLabel3(indata);
+                doButton1Click(true);            
+            }
+            indata = null;
+        }
+
+        delegate void doButton1ClickCallback(bool b);
+        private void doButton1Click(bool b)
+        {
+            if (this.button1.InvokeRequired)
+                this.Invoke(new doButton1ClickCallback(doButton1Click), new object[] { b });
+
+            else
+                this.button1.PerformClick();
+        }
+
+        delegate void setLabel3Callback(string s);
+        private void setLabel3(string s)
+        {
+            if (this.button1.InvokeRequired)
+                this.Invoke(new setLabel3Callback(setLabel3), new object[] { s });
+
+            else
+                this.label3.Text = s;
+        }
+    }
 
     public class RoundButton : Button
     {
