@@ -56,11 +56,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.serialConnect = new System.Windows.Forms.Button();
             this.recordButton = new HCI_Project.RoundButton();
             this.loopButton = new HCI_Project.RoundButton();
-            this.label3 = new System.Windows.Forms.Label();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.serialConnect = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -292,17 +291,6 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Name = "label2";
             // 
-            // serialPort1
-            // 
-            this.serialPort1.PortName = "COM3";
-            // 
-            // serialConnect
-            // 
-            resources.ApplyResources(this.serialConnect, "serialConnect");
-            this.serialConnect.Name = "serialConnect";
-            this.serialConnect.UseVisualStyleBackColor = true;
-            this.serialConnect.Click += new System.EventHandler(this.serialConnect_Click);
-            // 
             // recordButton
             // 
             resources.ApplyResources(this.recordButton, "recordButton");
@@ -319,17 +307,22 @@
             this.loopButton.Name = "loopButton";
             this.loopButton.UseVisualStyleBackColor = false;
             // 
-            // label3
+            // serialPort1
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            this.serialPort1.PortName = "COM3";
+            // 
+            // serialConnect
+            // 
+            resources.ApplyResources(this.serialConnect, "serialConnect");
+            this.serialConnect.Name = "serialConnect";
+            this.serialConnect.UseVisualStyleBackColor = true;
+            this.serialConnect.Click += new System.EventHandler(this.serialConnect_Click);
             // 
             // Drum_Pad_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.serialConnect);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -379,7 +372,6 @@
         private System.Windows.Forms.Label label2;
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Button serialConnect;
-        private System.Windows.Forms.Label label3;
     }
 }
 

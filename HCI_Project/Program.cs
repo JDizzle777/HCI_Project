@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace HCI_Project
 {
     static class Program
@@ -16,7 +15,8 @@ namespace HCI_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Drum_Pad_Form());
+            Drum_Pad_Form drumPad = new Drum_Pad_Form();
+            Application.Run(drumPad);
         }
     }
 }

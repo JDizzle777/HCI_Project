@@ -18,13 +18,14 @@ namespace HCI_Project
     public partial class Drum_Pad_Form : Form
     {
         // paths to audio files
-        string button1Path = @"C:\Users\conor\Documents\HCI_Sounds\COMPANYShaker.wav";
-        string button2Path = @"C:\Users\conor\Documents\HCI_Sounds\Stock808.wav";
-        string button3Path = @"C:\Users\conor\Documents\HCI_Sounds\StockKick.wav";
-        string button4Path = @"C:\Users\conor\Documents\HCI_Sounds\ChineseSnare.wav";
+        string button1Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\COMPANYShaker.wav";
+        string button2Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\Stock808.wav";
+        string button3Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\StockKick.wav";
+        string button4Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\ChineseSnare.wav";
 
         // default beats per minute
         double BPM = 80.0;
+        public bool metOn = false;
 
         public Drum_Pad_Form()
         {
@@ -44,12 +45,14 @@ namespace HCI_Project
 
         private void turnOnMet_Click(object sender, EventArgs e)
         {
+            this.metOn = true;
             turnOnMet.Checked = true;
             turnOffMet.Checked = false;
         }
 
         private void turnOffMet_Click(object sender, EventArgs e)
         {
+            this.metOn = false;
             turnOnMet.Checked = false;
             turnOffMet.Checked = true;
         }
@@ -126,7 +129,15 @@ namespace HCI_Project
 
         private void serialConnect_Click(object sender, EventArgs e)
         {
-            serialPort1.Open();
+            try
+            {
+                serialPort1.Open();
+            }
+            catch
+            {
+                MessageBox.Show("Please connect your Arduino drum pad to the computer and try again.", "Cannot Find Arduino Drum Pad", 
+                                 MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
             serialPort1.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
         }
 
@@ -162,8 +173,8 @@ namespace HCI_Project
             if (this.button1.InvokeRequired)
                 this.Invoke(new setLabel3Callback(setLabel3), new object[] { s });
 
-            else
-                this.label3.Text = s;
+           
+               // this.label3.Text = s;
         }
     }
 

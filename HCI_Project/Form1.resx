@@ -135,163 +135,163 @@
     <value>None</value>
   </data>
   <data name="mnuNew.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="mnuNew.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+N</value>
   </data>
   <data name="mnuNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 24</value>
+    <value>223, 22</value>
   </data>
   <data name="mnuNew.Text" xml:space="preserve">
     <value>New Project</value>
   </data>
   <data name="mnuOpen.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="mnuOpen.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+O</value>
   </data>
   <data name="mnuOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 24</value>
+    <value>223, 22</value>
   </data>
   <data name="mnuOpen.Text" xml:space="preserve">
     <value>Open Project</value>
   </data>
   <data name="mnuSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="mnuSave.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+S</value>
   </data>
   <data name="mnuSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 24</value>
+    <value>223, 22</value>
   </data>
   <data name="mnuSave.Text" xml:space="preserve">
     <value>Save Project</value>
   </data>
   <data name="mnuClose.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="mnuClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 24</value>
+    <value>223, 22</value>
   </data>
   <data name="mnuClose.Text" xml:space="preserve">
     <value>Close</value>
   </data>
   <data name="fileToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt, style=Bold</value>
+    <value>Eurostile, 15.75pt, style=Bold</value>
   </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 29</value>
+    <value>69, 26</value>
   </data>
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>File</value>
   </data>
   <data name="mnuUndo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="mnuUndo.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+Z</value>
   </data>
   <data name="mnuUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 24</value>
+    <value>210, 22</value>
   </data>
   <data name="mnuUndo.Text" xml:space="preserve">
     <value>Undo</value>
   </data>
   <data name="mnuRedo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="mnuRedo.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+Shift+Z</value>
   </data>
   <data name="mnuRedo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 24</value>
+    <value>210, 22</value>
   </data>
   <data name="mnuRedo.Text" xml:space="preserve">
     <value>Redo</value>
   </data>
   <data name="mnuRecord.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="mnuRecord.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+R</value>
   </data>
   <data name="mnuRecord.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 24</value>
+    <value>210, 22</value>
   </data>
   <data name="mnuRecord.Text" xml:space="preserve">
     <value>Record</value>
   </data>
   <data name="loopToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="loopToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 24</value>
+    <value>210, 22</value>
   </data>
   <data name="loopToolStripMenuItem.Text" xml:space="preserve">
     <value>Loop</value>
   </data>
   <data name="editToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt, style=Bold</value>
+    <value>Eurostile, 15.75pt, style=Bold</value>
   </data>
   <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 29</value>
+    <value>69, 26</value>
   </data>
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
     <value>Edit</value>
   </data>
   <data name="mnuBPM.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="mnuBPM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 24</value>
+    <value>158, 22</value>
   </data>
   <data name="mnuBPM.Text" xml:space="preserve">
     <value>Set BPM</value>
   </data>
   <data name="turnOnMet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 24</value>
+    <value>129, 22</value>
   </data>
   <data name="turnOnMet.Text" xml:space="preserve">
     <value>Turn on</value>
   </data>
   <data name="turnOffMet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 24</value>
+    <value>129, 22</value>
   </data>
   <data name="turnOffMet.Text" xml:space="preserve">
     <value>Turn off</value>
   </data>
   <data name="mnuMetronome.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="mnuMetronome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 24</value>
+    <value>158, 22</value>
   </data>
   <data name="mnuMetronome.Text" xml:space="preserve">
     <value>Metronome</value>
   </data>
   <data name="toolsToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt, style=Bold</value>
+    <value>Eurostile, 15.75pt, style=Bold</value>
   </data>
   <data name="toolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 29</value>
+    <value>69, 26</value>
   </data>
   <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
     <value>Tools</value>
   </data>
   <data name="tutorialToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="tutorialToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 24</value>
+    <value>131, 22</value>
   </data>
   <data name="tutorialToolStripMenuItem.Text" xml:space="preserve">
     <value>Tutorial</value>
   </data>
   <data name="helpToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt, style=Bold</value>
+    <value>Eurostile, 15.75pt, style=Bold</value>
   </data>
   <data name="helpToolStripMenuItem.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>ActiveBorder</value>
@@ -300,7 +300,7 @@
     <value>No</value>
   </data>
   <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 29</value>
+    <value>69, 26</value>
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>Help</value>
@@ -315,7 +315,7 @@
     <value>No</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 124</value>
+    <value>76, 112</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
@@ -334,7 +334,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -467,13 +467,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -482,7 +482,7 @@
     <value>36, 9</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 20</value>
+    <value>68, 17</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -506,16 +506,16 @@
     <value>True</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+    <value>Eurostile, 12pt, style=Bold</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 107</value>
+    <value>-1, 116</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 20</value>
+    <value>138, 17</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -609,7 +609,7 @@
     <value>12, 138</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 213</value>
+    <value>134, 213</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -624,7 +624,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <metadata name="serialPort1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
@@ -654,33 +654,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;serialConnect.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 459</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -2322,9 +2295,6 @@
         Jzr7m7900/9vBJC2vzP3oVSXfHPAWEwT2Br3obNTZ767s7+xMxa/2HeWAsitTUz/Zwjg/wGkMPSPRe14
         TgAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>1280, 720</value>
