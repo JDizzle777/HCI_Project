@@ -18,10 +18,10 @@ namespace HCI_Project
     public partial class Drum_Pad_Form : Form
     {
         // paths to audio files
-        string button1Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\COMPANYShaker.wav";
-        string button2Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\Stock808.wav";
-        string button3Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\StockKick.wav";
-        string button4Path = @"C:\Users\JD\Documents\Visual Studio 2015\Projects\HCI_Project\sounds\ChineseSnare.wav";
+        string button1Path = @"C:\Users\conor\Documents\HCI_Sounds\COMPANYShaker.wav";
+        string button2Path = @"C:\Users\conor\Documents\HCI_Sounds\kick.wav";
+        string button3Path = @"C:\Users\conor\Documents\HCI_Sounds\ay.wav";
+        string button4Path = @"C:\Users\conor\Documents\HCI_Sounds\ChineseSnare.wav";
 
         // default beats per minute
         double BPM = 80.0;
@@ -152,7 +152,18 @@ namespace HCI_Project
             if (temp > 0)
             {
                 setLabel3(indata);
-                doButton1Click(true);            
+
+                if ((temp - 4000) > 0)
+                    doButton4Click(true);
+
+                else if ((temp - 3000) > 0)
+                    doButton3Click(true);
+
+                else if ((temp - 2000) > 0)
+                    doButton2Click(true);
+
+                else if ((temp - 1000) > 0)
+                    doButton1Click(true);
             }
             indata = null;
         }
@@ -164,7 +175,49 @@ namespace HCI_Project
                 this.Invoke(new doButton1ClickCallback(doButton1Click), new object[] { b });
 
             else
-                this.button1.PerformClick();
+            {
+                var player = new WMPLib.WindowsMediaPlayer();
+                player.URL = button1Path;
+            }
+        }
+
+        delegate void doButton2ClickCallback(bool b);
+        private void doButton2Click(bool b)
+        {
+            if (this.button2.InvokeRequired)
+                this.Invoke(new doButton2ClickCallback(doButton2Click), new object[] { b });
+
+            else
+            {
+                var player = new WMPLib.WindowsMediaPlayer();
+                player.URL = button2Path;
+            }
+        }
+
+        delegate void doButton3ClickCallback(bool b);
+        private void doButton3Click(bool b)
+        {
+            if (this.button3.InvokeRequired)
+                this.Invoke(new doButton3ClickCallback(doButton3Click), new object[] { b });
+
+            else
+            {
+                var player = new WMPLib.WindowsMediaPlayer();
+                player.URL = button3Path;
+            }
+        }
+
+        delegate void doButton4ClickCallback(bool b);
+        private void doButton4Click(bool b)
+        {
+            if (this.button4.InvokeRequired)
+                this.Invoke(new doButton4ClickCallback(doButton4Click), new object[] { b });
+
+            else
+            {
+                var player = new WMPLib.WindowsMediaPlayer();
+                player.URL = button4Path;
+            }
         }
 
         delegate void setLabel3Callback(string s);
